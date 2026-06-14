@@ -3,7 +3,7 @@ class Song:
     genres = []
     artists = []
     genre_count = {}
-    artist_count = {}  # ✅ FIXED NAME
+    artist_count = {} 
 
     def __init__(self, name, artist, genre):
         self.name = name
@@ -33,7 +33,7 @@ class Song:
         else:
             Song.genre_count[self.genre] = 1
 
-    # ✅ FIXED METHOD NAME TO MATCH TESTS
+
     def add_to_artist_count(self):
         if self.artist in Song.artist_count:
             Song.artist_count[self.artist] += 1
